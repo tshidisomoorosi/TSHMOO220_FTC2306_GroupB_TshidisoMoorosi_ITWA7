@@ -12,8 +12,8 @@ const divider = '----------------------------------'
 const leoBalanceDec = parseFloat(leoBalance)
 const sarahBalanceDec = parseFloat(sarahBalance)
 const owed = -leoBalanceDec - sarahBalanceDec
-const leo = leoName +" "+ leoSurname + "Owed: R " + -leoBalanceDec.toFixed(2) + "\n"
-const sarah = sarahName + sarahSurname + " " + "Owed: R " + -sarahBalanceDec.toFixed(2) + "\n\n"
+const leo = leoName +" "+ leoSurname.trim() + " " + "Owed: R " + -leoBalanceDec.toFixed(2) + "\n"
+const sarah = sarahName.trim() + " " + sarahSurname + " " + "Owed: R " + -sarahBalanceDec.toFixed(2) + "\n\n"
 const total = "Total amount owed: R "
 const owedDec = owed.toFixed(2)
 const owedSep = owedDec.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ");
